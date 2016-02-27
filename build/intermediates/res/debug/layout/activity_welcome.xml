@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/color_bg"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Welcome!"
+        android:textColor="@color/color_title"
+        android:textSize="40sp"/>
+
+    <TextView
+        android:id="@+id/welcome_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="name"
+        android:textColor="@color/color_text_2"
+        android:textSize="35sp"/>
+
+    <TextView
+        android:id="@+id/welcome_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The note is loading..."
+        android:textColor="@color/color_title"
+        android:textSize="30sp"/>
+
+</LinearLayout><!-- From: file:/D:/Work/githubWork/SuperxlcrNote/res/layout/activity_welcome.xml -->

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 设置背景色图像资源 -->
+    <item android:id="@android:id/background">
+        <shape>
+            <gradient
+                android:angle="270"
+                android:endColor="#1d1d1d"
+                android:startColor="#000000" />
+
+            <corners android:radius="10dp" />
+        </shape>
+    </item>
+
+    <!-- 设置进度条颜色图像资源 -->
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <gradient
+                    android:angle="270"
+                    android:centerColor="#9724a4"
+                    android:endColor="#8979fd"
+                    android:startColor="#ba70fd" />
+
+                <corners android:radius="10dp" />
+            </shape>
+        </clip>
+    </item>
+
+</layer-list><!-- From: file:/D:/Work/githubWork/SuperxlcrNote/res/drawable/exp_progress_bar.xml -->

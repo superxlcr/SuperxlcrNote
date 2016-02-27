@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\Work\SuperxlcrNote\libs\android-support-v4.jar"
+        jumboMode="false"
+        revision="21.1.0"
+        sha1="612846c9857077a039b533718f72db3bc041d389">
+        <dex dex="D:\Work\SuperxlcrNote\build\intermediates\pre-dexed\debug\android-support-v4-167e4177b24c77955362acd39b5d13064d5d0447.jar" />
+    </item>
+    <item
+        jar="D:\Work\SuperxlcrNote\libs\nineoldandroids-2.4.0.jar"
+        jumboMode="false"
+        revision="21.1.0"
+        sha1="59f19e43354d32de831379c23ce03bb259a4c2b7">
+        <dex dex="D:\Work\SuperxlcrNote\build\intermediates\pre-dexed\debug\nineoldandroids-2.4.0-759bed672fcff897234ebf8a0c9e9de9639440dd.jar" />
+    </item>
+
+</items>

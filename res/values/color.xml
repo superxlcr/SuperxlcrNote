@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="color_bg">#302418</color>
+    <color name="color_bg2">#251b11</color>
+    <color name="color_bg3">#ffffff</color>
+    <color name="color_bg4">#302918</color>
+    <color name="color_bg_selected">#63838B</color>
+    <color name="color_text">#ad9281</color>
+    <color name="color_text_2">#a09991</color>
+    <color name="color_text_selected">#1c1611</color>
+    <color name="color_bar">#0a1011</color>
+    <color name="color_title">#eb9155</color>
+
+</resources>

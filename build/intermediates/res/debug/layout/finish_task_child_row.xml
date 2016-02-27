@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_bg"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="30dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/corners_bg"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/task_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/task_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginRight="10dp"
+            android:text="任務名稱最長有12個字哦"
+            android:textColor="@color/color_text"
+            android:textSize="17sp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/task_description"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="任務目標:"
+                android:textColor="@color/color_text"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/task_total_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="100%"
+                android:textColor="#ffffff"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/task_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/task_description"
+            android:text="XXXX/XX/XX"
+            android:textColor="#ad9281"/>
+
+        <TextView
+            android:id="@+id/task_time_division"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/task_description"
+            android:layout_toRightOf="@+id/task_start_time"
+            android:text="~"
+            android:textColor="@color/color_text"/>
+
+        <TextView
+            android:id="@+id/task_finish_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/task_description"
+            android:layout_toRightOf="@+id/task_time_division"
+            android:text="XXXX/XX/XX"
+            android:textColor="@color/color_text"/>
+
+        <LinearLayout
+            android:id="@+id/task_reward_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/task_description"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="任務獎勵:"
+                android:textColor="@color/color_text"
+                android:textSize="14sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/D:/Work/githubWork/SuperxlcrNote/res/layout/finish_task_child_row.xml -->

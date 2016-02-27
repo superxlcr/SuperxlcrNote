@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/show_working_task_tab"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color_bar"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/new_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/new_task" />
+
+        <ImageView
+            android:id="@+id/person_face_tab_working_task"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:clickable="false"
+            android:src="@drawable/person_header" />
+
+        <TextView
+            android:id="@+id/person_name_tab_working_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/person_face_tab_working_task"
+            android:text="未知"
+            android:textColor="@color/color_text_2"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/person_level_text_tab_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/person_name_tab_working_task"
+            android:text="LV."
+            android:textColor="@color/color_text" />
+
+        <TextView
+            android:id="@+id/person_level_tab_working_task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/person_level_text_tab_1"
+            android:text="0"
+            android:textColor="@color/color_text_2"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <util.listener.SwipeListView
+        android:id="@+id/working_task_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_bg"
+        android:listSelector="#00000000"
+        swipe:swipeActionLeft="reveal"
+        swipe:swipeActionRight="reveal"
+        swipe:swipeAnimationTime="0"
+        swipe:swipeBackView="@+id/back"
+        swipe:swipeCloseAllItemsWhenMoveList="true"
+        swipe:swipeFrontView="@+id/front"
+        swipe:swipeMode="both"
+        swipe:swipeOffsetLeft="0dp"
+        swipe:swipeOffsetRight="0dp"
+        swipe:swipeOpenOnLongPress="false" />
+
+</LinearLayout><!-- From: file:/D:/Work/githubWork/SuperxlcrNote/res/layout/show_working_task_list_tab.xml -->

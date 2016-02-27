@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/D:/Work/githubWork/SuperxlcrNote/res/values/color.xml -->
+    <eat-comment/>
+    <color name="color_bar">#0a1011</color>
+    <color name="color_bg">#302418</color>
+    <color name="color_bg2">#251b11</color>
+    <color name="color_bg3">#ffffff</color>
+    <color name="color_bg4">#302918</color>
+    <color name="color_bg_selected">#63838B</color>
+    <color name="color_text">#ad9281</color>
+    <color name="color_text_2">#a09991</color>
+    <color name="color_text_selected">#1c1611</color>
+    <color name="color_title">#eb9155</color>
+    <declare-styleable name="SwipeListView"><attr format="boolean" name="swipeOpenOnLongPress"/><attr format="integer" name="swipeAnimationTime"/><attr format="dimension" name="swipeOffsetLeft"/><attr format="dimension" name="swipeOffsetRight"/><attr format="boolean" name="swipeCloseAllItemsWhenMoveList"/><attr format="reference" name="swipeFrontView"/><attr format="reference" name="swipeBackView"/><attr format="enum" name="swipeMode"><enum name="none" value="0"/><enum name="both" value="1"/><enum name="right" value="2"/><enum name="left" value="3"/></attr><attr format="enum" name="swipeActionLeft"><enum name="reveal" value="0"/><enum name="dismiss" value="1"/><enum name="choice" value="2"/></attr><attr format="enum" name="swipeActionRight"><enum name="reveal" value="0"/><enum name="dismiss" value="1"/><enum name="choice" value="2"/></attr><attr format="reference" name="swipeDrawableChecked"/><attr format="reference" name="swipeDrawableUnchecked"/></declare-styleable>
+    <!-- From: file:/D:/Work/githubWork/SuperxlcrNote/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="app_name">小梁便簽</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <!-- From: file:/D:/Work/githubWork/SuperxlcrNote/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+</resources>

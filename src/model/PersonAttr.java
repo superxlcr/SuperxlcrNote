@@ -1,12 +1,16 @@
 package model;
 
+/**
+ * Created by Superxlcr
+ * 用户属性类
+ */
 public class PersonAttr {
-	private String name;
-	private int number;
-	private String color;
-	private String shortName;
-	private int icon;
-	private boolean haveIcon;
+	private String name; // 属性名称
+	private int number; // 属性值
+	private String color; // 属性文字颜色
+	private String shortName; // 属性简称（列表显示用）
+	private int icon; // 属性图标
+	private boolean haveIcon; // 是否拥有图标
 	
 	public PersonAttr(String name , int number , String color , int icon , boolean haveIcon , String shortName) {
 		this.name = name;

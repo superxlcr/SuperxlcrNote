@@ -25,7 +25,12 @@ import model.SuperxlcrNoteDB;
 import model.TestSetting;
 import util.adapter.DailyTaskAdapter;
 
+/**
+ * Created by Superxlcr
+ * 管理日常任务界面的类
+ */
 public class DailyTaskActivity {
+	// 活动实体
 	private Activity activity;
 
 	private Button newDailyTask;
@@ -140,12 +145,18 @@ public class DailyTaskActivity {
 
 	}
 
+	/**
+	 * 用于刷新列表数据
+	 */
 	public void refreshData() {
 		dailyTaskData.clear();
 		dailyTaskData.addAll(db.getDailyTasks());
 		dailyTaskAdapter.notifyDataSetChanged();
 	}
 
+	/**
+	 * 用于更新widget
+	 */
 	private void refreshWidget() {
 		Intent intent = new Intent(activity, WidgetProvider.class);
 		intent.putExtra("finishDailyTask", db.getFinishDailyTaskNumber());

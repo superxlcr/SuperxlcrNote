@@ -13,6 +13,7 @@ import com.superxlcrnote.app.R;
 /**
  * Created by Superxlcr
  * On 2015/11/22
+ * 欢迎界面，自动跳转到主界面，防止载入出现黑屏
  */
 public class WelcomeActivity extends Activity {
 
@@ -32,7 +33,7 @@ public class WelcomeActivity extends Activity {
         }
 
         // 检查activity是否在运行
-        if (!MainListActivity.activityRunning) {
+        if (!MainListActivity.activityRunning) { // 未运行，延迟后跳转activity，避免产生黑屏
 
             new Handler().postDelayed(new Runnable() {
                 @Override
@@ -44,6 +45,7 @@ public class WelcomeActivity extends Activity {
                 }
             }, 1000);
         } else {
+            // 已运行，使用singleTop避免产生新的activity
             Intent intent = new Intent(WelcomeActivity.this, MainListActivity.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);

@@ -22,7 +22,12 @@ import model.FinishTask;
 import model.SuperxlcrNoteDB;
 import util.adapter.FinishTaskExpandableListAdapter;
 
+/**
+ * Created by Superxlcr
+ * 管理已完成任务界面的类
+ */
 public class FinishTaskActivity {
+    // 活动实体
     private Activity activity = null;
 
     private List<FinishTask> finishTaskData;
@@ -173,6 +178,9 @@ public class FinishTaskActivity {
                 });
     }
 
+    /**
+     * 更新列表数据
+     */
     public void refreshData() {
         groupList.clear();
         childList.clear();

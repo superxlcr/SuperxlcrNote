@@ -33,6 +33,10 @@ import model.SuperxlcrNoteDB;
 import util.DrawView;
 import util.SDCardCheckTools;
 
+/**
+ * Created by Superxlcr
+ * 个人信息界面的类
+ */
 public class PersonInfoActivity {
     private Activity activity = null;
 

@@ -31,6 +31,10 @@ import model.SuperxlcrNoteDB;
 import model.TestSetting;
 import util.DrawView;
 
+/**
+ * Created by Superxlcr
+ * 日常任务界面的展示日常任务细节碎片
+ */
 public class ShowDailyTaskDetailFragment extends Fragment {
 
     private View view;

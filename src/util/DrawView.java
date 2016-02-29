@@ -17,6 +17,7 @@ import model.PersonAttr;
 /**
  * Created by Superxlcr
  * On 2015/11/20
+ * 绘制奖励页面的工具类
  */
 public class DrawView {
 

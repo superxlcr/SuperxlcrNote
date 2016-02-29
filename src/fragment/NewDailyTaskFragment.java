@@ -1,11 +1,5 @@
 package fragment;
 
-import java.util.List;
-import java.util.Random;
-
-import model.PersonAttr;
-import model.SuperxlcrNoteDB;
-import activity.MainListActivity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.Intent;
@@ -24,10 +18,21 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-import broadcast.WidgetProvider;
 
 import com.superxlcrnote.app.R;
 
+import java.util.List;
+import java.util.Random;
+
+import activity.MainListActivity;
+import broadcast.WidgetProvider;
+import model.PersonAttr;
+import model.SuperxlcrNoteDB;
+
+/**
+ * Created by Superxlcr
+ * 日常任务界面的新建任务碎片
+ */
 public class NewDailyTaskFragment extends Fragment {
 
 	private View view;
@@ -117,6 +122,9 @@ public class NewDailyTaskFragment extends Fragment {
 		return view;
 	}
 
+	/**
+	 * 关闭本界面
+	 */
 	private void finish() {
 		FragmentManager fragmentManager = getFragmentManager();
 		android.app.FragmentTransaction transaction = fragmentManager
@@ -190,6 +198,9 @@ public class NewDailyTaskFragment extends Fragment {
 		task_reward.addView(ll);
 	}
 
+	/**
+	 * 更新widget信息
+	 */
 	private void refreshWidget() {
 		Intent intent = new Intent(getActivity(), WidgetProvider.class);
 		intent.putExtra("finishDailyTask", db.getFinishDailyTaskNumber());

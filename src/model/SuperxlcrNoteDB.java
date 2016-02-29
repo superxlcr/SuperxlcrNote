@@ -11,6 +11,10 @@ import java.util.List;
 
 import database.SuperxlcrNoteOpenHelper;
 
+/**
+ * Created by Superxlcr
+ * 便签数据库模型，使用单例模式进行设计
+ */
 public class SuperxlcrNoteDB {
     /**
      * 数据库名

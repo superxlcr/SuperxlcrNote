@@ -1,12 +1,16 @@
 package model;
 
+/**
+ * Created by Superxlcr
+ * 日常任务类
+ */
 public class DailyTask {
 	private int id;
-	private String description;
-	private int continuous;
-	private int finishTimes;
+	private String description; // 任务描述
+	private int continuous; // 任务连续完成天数
+	private int finishTimes; // 任务完成总天数
 	private int finish; // 0 unfinish, 1 finish
-	private String reward;
+	private String reward; // 奖励
 
 	public DailyTask(int id, String description, int continuous,
 			int finishTimes, int finish, String reward) {

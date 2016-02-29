@@ -30,6 +30,10 @@ import model.SuperxlcrNoteDB;
 import model.WorkingTask;
 import util.listener.SwipeListView;
 
+/**
+ * Created by Superxlcr
+ * 未完成任务适配器
+ */
 public class WorkingTaskSwipeAdapter extends ArrayAdapter<WorkingTask> {
 	private LayoutInflater mInflater;
 	private SwipeListView mSwipeListView;

@@ -21,6 +21,7 @@ import model.SuperxlcrNoteDB;
 /**
  * Created by Superxlcr
  * On 2015/11/30
+ * 已完成任务的双层列表适配器
  */
 public class FinishTaskExpandableListAdapter extends BaseExpandableListAdapter {
 

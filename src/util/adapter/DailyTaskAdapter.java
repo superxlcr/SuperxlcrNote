@@ -14,6 +14,10 @@ import java.util.List;
 
 import model.DailyTask;
 
+/**
+ * Created by Superxlcr
+ * 日常任务适配器
+ */
 public class DailyTaskAdapter extends ArrayAdapter<DailyTask> {
 
 	private LayoutInflater mInflater;

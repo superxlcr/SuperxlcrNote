@@ -1,10 +1,5 @@
 package activity;
 
-import java.util.List;
-import java.util.Random;
-
-import model.PersonAttr;
-import model.SuperxlcrNoteDB;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -23,10 +18,20 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-import broadcast.WidgetProvider;
 
 import com.superxlcrnote.app.R;
 
+import java.util.List;
+import java.util.Random;
+
+import broadcast.WidgetProvider;
+import model.PersonAttr;
+import model.SuperxlcrNoteDB;
+
+/**
+ * Created by Superxlcr
+ * 新建未完成任务界面
+ */
 public class NewWorkingTaskActivity extends Activity {
 
 	private EditText task_description;
@@ -136,7 +141,7 @@ public class NewWorkingTaskActivity extends Activity {
 		rewardPoint = sp.getInt("level", 0) / 5 + 3;
 		task_reward_point.setText(Integer.toString(rewardPoint));
 
-		// 注册绘图监听器
+		// 注册绘图监听器，在界面渲染完成后再添加布局
 		ViewTreeObserver vto = task_reward.getViewTreeObserver();
 		vto.addOnGlobalLayoutListener(new OnGlobalLayoutListener() {
 			@Override

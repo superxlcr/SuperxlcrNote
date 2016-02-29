@@ -1,21 +1,22 @@
 package service;
 
+import android.app.Service;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.os.IBinder;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Timer;
 import java.util.TimerTask;
 
+import broadcast.WidgetProvider;
 import model.SuperxlcrNoteDB;
 
-import broadcast.WidgetProvider;
-
-import android.app.Service;
-import android.content.Intent;
-import android.content.SharedPreferences;
-import android.os.Bundle;
-import android.os.IBinder;
-import android.widget.Toast;
-
+/**
+ * Created by Superxlcr
+ * 后台widget计时服务，用于更新日常任务情况，刷新widget
+ */
 public class WidgetService extends Service {
 
 	private Timer timer = null;

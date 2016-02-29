@@ -3,14 +3,18 @@ package model;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+/**
+ * Created by Superxlcr
+ * 已完成任务
+ */
 public class FinishTask {
 	private int id;
-	private String description;
-	private int total_progress;
-	private String unit;
-	private String reward;
-	private String start_time;
-	private String finish_time;
+	private String description; // 描述
+	private int total_progress; // 任务总进度
+	private String unit; // 单位
+	private String reward; // 奖励
+	private String start_time; // 任务开始时间
+	private String finish_time; // 任务结束时间
 	
 	public FinishTask(int id , String description , int total_progress , String unit , String reward , String start_time , String finish_time) {
 		this.id = id;

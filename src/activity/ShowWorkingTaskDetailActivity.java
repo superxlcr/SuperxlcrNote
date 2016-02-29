@@ -37,6 +37,10 @@ import model.TestSetting;
 import model.WorkingTask;
 import util.DrawView;
 
+/**
+ * Created by Superxlcr
+ * 显示未完成任务细节界面
+ */
 public class ShowWorkingTaskDetailActivity extends Activity
         implements OnClickListener {
 
@@ -125,7 +129,7 @@ public class ShowWorkingTaskDetailActivity extends Activity
         }
     }
 
-    // 界面加载完毕
+    // 界面加载完毕后，加载动画与音效
     @Override
     public void onWindowFocusChanged(boolean hasFocus) {
         super.onWindowFocusChanged(hasFocus);

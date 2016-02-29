@@ -19,6 +19,10 @@ import model.PersonAttr;
 import model.SuperxlcrNoteDB;
 import util.DrawView;
 
+/**
+ * Created by Superxlcr
+ * 显示已完成任务细节的界面
+ */
 public class ShowFinishTaskDetailActivity extends Activity {
 
     private TextView task_description;

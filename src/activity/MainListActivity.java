@@ -22,6 +22,10 @@ import java.util.List;
 import model.SuperxlcrNoteDB;
 import service.WidgetService;
 
+/**
+ * Created by Superxlcr
+ * 主界面
+ */
 public class MainListActivity extends Activity {
 
 	public static boolean activityRunning = false;
@@ -31,11 +35,13 @@ public class MainListActivity extends Activity {
 	private SharedPreferences sp;
 	private SharedPreferences.Editor editor;
 
+	// 用TabHost管理所有界面，把每个界面的内容封装到对应类中管理
 	private WorkingTaskActivity workingTaskActivity;
 	private DailyTaskActivity dailyTaskActivity;
 	private FinishTaskActivity finishTaskActivity;
 	private PersonInfoActivity personInfoActivity;
 
+	// 两次点击退出的时间间隔
 	private long clickTime = 0;
 
 	@Override
@@ -103,6 +109,7 @@ public class MainListActivity extends Activity {
 					.setBackgroundResource(R.drawable.tab_button);
 		}
 
+		// 判断后台时间Service是否在运行
 		Intent service = new Intent(this, WidgetService.class);
 		if (isServiceRunning(this, "WidgetService") == false) {
 			this.startService(service);

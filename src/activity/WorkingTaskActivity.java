@@ -1,12 +1,5 @@
 package activity;
 
-import java.util.List;
-
-import model.SuperxlcrNoteDB;
-import model.WorkingTask;
-import util.listener.BaseSwipeListViewListener;
-import util.listener.SwipeListView;
-import util.adapter.WorkingTaskSwipeAdapter;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -16,7 +9,20 @@ import android.widget.Button;
 
 import com.superxlcrnote.app.R;
 
+import java.util.List;
+
+import model.SuperxlcrNoteDB;
+import model.WorkingTask;
+import util.adapter.WorkingTaskSwipeAdapter;
+import util.listener.BaseSwipeListViewListener;
+import util.listener.SwipeListView;
+
+/**
+ * Created by Superxlcr
+ * 管理未完成任务界面的类
+ */
 public class WorkingTaskActivity {
+	// 活动实体
 	private Activity activity = null;
 
 	private SwipeListView mSwipeListView;

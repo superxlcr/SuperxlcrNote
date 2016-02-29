@@ -3,17 +3,21 @@ package model;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+/**
+ * Created by Superxlcr
+ * 未完成任务类
+ */
 public class WorkingTask {
 	private int id;
-	private String description;
-	private int now_progress;
-	private int total_progress;
-	private String unit;
-	private String reward;
-	private String start_time;
-	private String original_start_time;
-	private String note;
-	private int todayWork;
+	private String description; // 任务描述
+	private int now_progress; // 任务目前进度
+	private int total_progress; // 任务总进度
+	private String unit; // 任务单位
+	private String reward; // 任务奖励
+	private String start_time; // 任务开始时间
+	private String original_start_time; // 任务开始时间戳
+	private String note; // 任务注释
+	private int todayWork; // 今日是否完成该任务
 	
 	public WorkingTask(int id , String description , int now_progress , int total_progress , String unit , String reward , String start_time , String note , int todayWork) {
 		this.id = id;

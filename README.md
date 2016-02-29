@@ -6,6 +6,7 @@
 
 ##注意事项
 本应用目标Android版本为 4.1
+
 本应用的数据均存储在本地数据库，删除应用后将不复存在
 
 下载地址：https://github.com/superxlcr/SuperxlcrNote/blob/master/bin/SuperxlcrNote.apk
